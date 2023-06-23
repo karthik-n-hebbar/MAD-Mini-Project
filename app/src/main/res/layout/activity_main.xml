@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="homelayoutButton"
+    android:background="@drawable/road"
     tools:context=".MainActivity">
 
     <TextView
@@ -28,6 +29,7 @@
         android:layout_height="132dp"
         android:onClick="homelayoutButton1"
         android:text="Internal Combustion Vehicles"
+        android:textAllCaps="false"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,7 +59,10 @@
         android:layout_width="198dp"
         android:layout_height="113dp"
         android:onClick="reg"
-        android:text="Add Service"
+        android:text="Exit"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
