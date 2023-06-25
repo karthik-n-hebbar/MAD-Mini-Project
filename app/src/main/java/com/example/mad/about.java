@@ -2,11 +2,15 @@ package com.example.mad;
 
 import android.os.Bundle;
 
-public class aboutus extends MainActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+
+public class about extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aboutus);
+
     }
 }

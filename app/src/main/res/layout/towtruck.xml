@@ -36,7 +36,7 @@
 
             <ImageView
                 android:id="@+id/imageView25"
-                app:srcCompat="@drawable/a"
+                app:srcCompat="@drawable/tta"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -58,20 +58,21 @@
                     android:text="Name: Quick Towing Services" />
 
                 <TextView
-                    android:id="@+id/textView252"
+                    android:id="@+id/address13"
                     android:layout_width="175dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="32dp"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 123, MG Road, Koramangala, Bengaluru, Karnataka, India" />
+                    android:text="Address: 123, MG Road, Koramangala, Bengaluru" />
 
                 <TextView
-                    android:id="@+id/textView253"
+                    android:id="@+id/contact13"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
                     android:text="Contact: +91 1234567890" />
+
             </LinearLayout>
 
         </LinearLayout>
@@ -83,7 +84,7 @@
 
             <ImageView
                 android:id="@+id/imageView26"
-                app:srcCompat="@drawable/b"
+                app:srcCompat="@drawable/ttb"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -105,7 +106,7 @@
                     android:text="Name: Reliable Roadside Assistance" />
 
                 <TextView
-                    android:id="@+id/textView262"
+                    android:id="@+id/address14"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -113,12 +114,13 @@
                     android:text="Address: 456, Indiranagar, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView263"
+                    android:id="@+id/contact14"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
                     android:text="Contact: +91 9876543210" />
+
             </LinearLayout>
 
         </LinearLayout>
@@ -130,7 +132,7 @@
 
             <ImageView
                 android:id="@+id/imageView27"
-                app:srcCompat="@drawable/c"
+                app:srcCompat="@drawable/ttc"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -152,7 +154,7 @@
                     android:text="Name: Swift Recovery Solutions" />
 
                 <TextView
-                    android:id="@+id/textView272"
+                    android:id="@+id/address15"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -160,7 +162,7 @@
                     android:text="Address: 789, Jayanagar, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView273"
+                    android:id="@+id/contact15"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -177,7 +179,7 @@
 
             <ImageView
                 android:id="@+id/imageView28"
-                app:srcCompat="@drawable/d"
+                app:srcCompat="@drawable/ttd"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -199,7 +201,7 @@
                     android:text="Name: Speedy Towing and Recovery" />
 
                 <TextView
-                    android:id="@+id/textView282"
+                    android:id="@+id/address16"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -207,7 +209,7 @@
                     android:text="Address: 321, Whitefield, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView283"
+                    android:id="@+id/contact16"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -222,8 +224,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="Back"
-            android:onClick="cslayoutButton"/>
+            android:text="Back" />
 
     </LinearLayout>
 

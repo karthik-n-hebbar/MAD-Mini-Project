@@ -2,9 +2,12 @@ package com.example.mad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,12 +16,52 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        LinearLayout ev = findViewById(R.id.lv1);
+        ev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, evs.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout ic = findViewById(R.id.lv2);
+        ic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ice.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout au = findViewById(R.id.lv3);
+        au.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, about.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout cu = findViewById(R.id.lv4);
+        cu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, contact.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 
     public void homelayoutButton(View view){setContentView(R.layout.evs);}
     public void homelayoutButton1(View view){
         setContentView(R.layout.ice);
+    }
+    public void homelayoutButton2(View view){
+        setContentView(R.layout.aboutus);
     }
 
 
@@ -64,20 +107,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-//    String location = "latitude,longitude"; // Replace with the desired location coordinates
-//
-//    // Create a Uri with the location details
-//    Uri gmmIntentUri = Uri.parse("geo:" + location + "?z=15");
-//
-//    // Create an Intent with the Uri to launch Google Maps
-//    Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-//    mapIntent.setPackage("com.google.android.apps.maps");
-//
-//    // Verify if there is an app available to handle the Intent
-//    if (mapIntent.resolveActivity(getPackageManager()) != null) {
-//            // Launch the Intent to open Google Maps
-//            startActivity(mapIntent);
-//    }
 
 //    TextView myTextView = findViewById(R.id.contact);
 //    String phoneNumber = myTextView.getText().toString();
@@ -91,8 +120,6 @@ public class MainActivity extends AppCompatActivity {
 //            // Launch the Intent to make the phone call
 //            startActivity(intent);
 //    }
-
-
 
 
 }

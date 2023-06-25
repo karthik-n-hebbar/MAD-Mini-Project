@@ -11,8 +11,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="649dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="637dp"
         android:gravity="center"
         android:padding="10dp"
         android:text="Nearest Battery Swapping Stations"
@@ -42,7 +42,7 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp"
-                app:srcCompat="@drawable/a" />
+                app:srcCompat="@drawable/bssa" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -61,7 +61,7 @@
                     android:text="Name: SwiftSwap Station" />
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/address5"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -69,7 +69,7 @@
                     android:text="Address: 789, Indiranagar, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/contact5"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -89,7 +89,7 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp"
-                app:srcCompat="@drawable/b" />
+                app:srcCompat="@drawable/bssb" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -108,7 +108,7 @@
                     android:text="Name: PowerCharge Hub" />
 
                 <TextView
-                    android:id="@+id/textView22"
+                    android:id="@+id/address6"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -116,7 +116,7 @@
                     android:text="Address: 321, Jayanagar, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView23"
+                    android:id="@+id/contact6"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -136,7 +136,7 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp"
-                app:srcCompat="@drawable/c" />
+                app:srcCompat="@drawable/bssc" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -155,7 +155,7 @@
                     android:text="Name: ElectroSwap Point" />
 
                 <TextView
-                    android:id="@+id/textView32"
+                    android:id="@+id/address7"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -163,7 +163,7 @@
                     android:text="Address: 567, Whitefield, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView33"
+                    android:id="@+id/contact7"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -183,7 +183,7 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp"
-                app:srcCompat="@drawable/d" />
+                app:srcCompat="@drawable/bssd" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -202,7 +202,7 @@
                     android:text="Name: VoltEx Station" />
 
                 <TextView
-                    android:id="@+id/textView42"
+                    android:id="@+id/address8"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -210,7 +210,7 @@
                     android:text="Address: 234, Marathahalli, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView43"
+                    android:id="@+id/contact8"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -225,7 +225,6 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:onClick="cslayoutButton"
             android:text="BACK" />
 
     </LinearLayout>

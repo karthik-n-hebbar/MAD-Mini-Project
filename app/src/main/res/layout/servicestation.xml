@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView6"
@@ -36,10 +37,10 @@
 
             <ImageView
                 android:id="@+id/imageView21"
-                app:srcCompat="@drawable/a"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ssa" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -58,7 +59,7 @@
                     android:text="Name: EV Care Center" />
 
                 <TextView
-                    android:id="@+id/textView212"
+                    android:id="@+id/address9"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -66,7 +67,7 @@
                     android:text="Address: 123, MG Road, Koramangala, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView213"
+                    android:id="@+id/contact9"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -83,10 +84,10 @@
 
             <ImageView
                 android:id="@+id/imageView22"
-                app:srcCompat="@drawable/b"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ssb" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -105,7 +106,7 @@
                     android:text="Name: Electric Auto Service" />
 
                 <TextView
-                    android:id="@+id/textView222"
+                    android:id="@+id/address10"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -113,7 +114,7 @@
                     android:text="Address: 456, Indiranagar, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView223"
+                    android:id="@+id/contact10"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -130,10 +131,10 @@
 
             <ImageView
                 android:id="@+id/imageView23"
-                app:srcCompat="@drawable/c"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ssc" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -152,7 +153,7 @@
                     android:text="Name: Green Charge Garage" />
 
                 <TextView
-                    android:id="@+id/textView232"
+                    android:id="@+id/address11"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -160,7 +161,7 @@
                     android:text="Address: 789, Jayanagar, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView233"
+                    android:id="@+id/contact11"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -177,10 +178,10 @@
 
             <ImageView
                 android:id="@+id/imageView24"
-                app:srcCompat="@drawable/d"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginLeft="10dp" />
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ssd" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -199,7 +200,7 @@
                     android:text="Name: Eco-EV Service Hub" />
 
                 <TextView
-                    android:id="@+id/textView242"
+                    android:id="@+id/address12"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -207,7 +208,7 @@
                     android:text="Address: 321, Whitefield, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView243"
+                    android:id="@+id/contact12"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -222,8 +223,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="Back"
-            android:onClick="cslayoutButton"/>
+            android:text="Back" />
 
     </LinearLayout>
 

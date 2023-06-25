@@ -36,7 +36,7 @@
 
             <ImageView
                 android:id="@+id/imageView9"
-                app:srcCompat="@drawable/a"
+                app:srcCompat="@drawable/ssa"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -58,7 +58,7 @@
                     android:text="Name: AutoPro Garage" />
 
                 <TextView
-                    android:id="@+id/textView92"
+                    android:id="@+id/address21"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -66,7 +66,7 @@
                     android:text="Address: 789, Indiranagar, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView93"
+                    android:id="@+id/contact25"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -83,7 +83,7 @@
 
             <ImageView
                 android:id="@+id/imageView10"
-                app:srcCompat="@drawable/b"
+                app:srcCompat="@drawable/ssb"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -105,7 +105,7 @@
                     android:text="Name: SpeedyFix Auto Garage" />
 
                 <TextView
-                    android:id="@+id/textView102"
+                    android:id="@+id/address22"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -113,7 +113,7 @@
                     android:text="Address: 321, Jayanagar, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView103"
+                    android:id="@+id/contact26"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -130,7 +130,7 @@
 
             <ImageView
                 android:id="@+id/imageView11"
-                app:srcCompat="@drawable/c"
+                app:srcCompat="@drawable/ssc"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -152,7 +152,7 @@
                     android:text="Name: Elite Motors Service Center" />
 
                 <TextView
-                    android:id="@+id/textView112"
+                    android:id="@+id/address23"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -160,7 +160,7 @@
                     android:text="Address: 567, Whitefield, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView113"
+                    android:id="@+id/contact27"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -177,7 +177,7 @@
 
             <ImageView
                 android:id="@+id/imageView12"
-                app:srcCompat="@drawable/d"
+                app:srcCompat="@drawable/ssd"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -199,7 +199,7 @@
                     android:text="Name: Precision Auto Care Garage" />
 
                 <TextView
-                    android:id="@+id/textView122"
+                    android:id="@+id/address24"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -207,7 +207,7 @@
                     android:text="Address: 234, Marathahalli, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView123"
+                    android:id="@+id/contact28"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -222,8 +222,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="Back"
-            android:onClick="pplayoutButton"/>
+            android:text="Back" />
 
     </LinearLayout>
 

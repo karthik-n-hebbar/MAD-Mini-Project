@@ -1,2 +1,141 @@
-package com.example.mad;public class batteryswap {
+package com.example.mad;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class batteryswap extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.batteryswap);
+
+        Button button = findViewById(R.id.button11);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(batteryswap.this, evs.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView txt = findViewById(R.id.address5);
+        txt.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String location = "Laven Gardenia";  // Replace with the desired location
+
+                // Create an Intent with the location data
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");  // Specify the package name of the maps application
+
+                // Check if there is a maps application available to handle the intent
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    // Start the maps application
+                    startActivity(mapIntent);
+                }
+                else
+                {
+                    startActivity(mapIntent);
+                }
+            }
+        });
+
+        TextView txt2 = findViewById(R.id.address6);
+        txt2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String location = "DSATM";  // Replace with the desired location
+
+                // Create an Intent with the location data
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");  // Specify the package name of the maps application
+
+                // Check if there is a maps application available to handle the intent
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    // Start the maps application
+                    startActivity(mapIntent);
+                }
+                else
+                {
+                    startActivity(mapIntent);
+                }
+            }
+        });
+
+        TextView txt3 = findViewById(R.id.address7);
+        txt3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String location = "DSU";  // Replace with the desired location
+
+                // Create an Intent with the location data
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");  // Specify the package name of the maps application
+
+                // Check if there is a maps application available to handle the intent
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    // Start the maps application
+                    startActivity(mapIntent);
+                }
+                else
+                {
+                    startActivity(mapIntent);
+                }
+            }
+        });
+
+        TextView txt4 = findViewById(R.id.address8);
+        txt4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String location = "DSI";  // Replace with the desired location
+
+                // Create an Intent with the location data
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");  // Specify the package name of the maps application
+
+                // Check if there is a maps application available to handle the intent
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    // Start the maps application
+                    startActivity(mapIntent);
+                }
+                else
+                {
+                    startActivity(mapIntent);
+                }
+            }
+        });
+
+        // Define an array of contact TextView IDs
+        int[] contactTextViewIds = {R.id.contact5, R.id.contact6, R.id.contact7, R.id.contact8};
+
+        // Iterate through the contact TextViews
+        for (int i = 0; i < contactTextViewIds.length; i++) {
+            TextView contactTextView = findViewById(contactTextViewIds[i]);
+            contactTextView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String phoneNumber = contactTextView.getText().toString().trim();
+
+                    Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                    callIntent.setData(Uri.parse("tel:" + phoneNumber));
+
+                    if (callIntent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(callIntent);
+                    }
+                    else
+                    {
+                        startActivity(callIntent);
+                    }
+                }
+            });
+        }
+
+    }
 }

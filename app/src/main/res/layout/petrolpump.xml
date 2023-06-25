@@ -36,7 +36,7 @@
 
             <ImageView
                 android:id="@+id/imageView17"
-                app:srcCompat="@drawable/a"
+                app:srcCompat="@drawable/ppa"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -58,7 +58,7 @@
                     android:text="Name: Shell Fuel Station" />
 
                 <TextView
-                    android:id="@+id/textView172"
+                    android:id="@+id/address17"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -66,7 +66,7 @@
                     android:text="Address: 789, Indiranagar, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView133"
+                    android:id="@+id/contact17"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -83,7 +83,7 @@
 
             <ImageView
                 android:id="@+id/imageView18"
-                app:srcCompat="@drawable/b"
+                app:srcCompat="@drawable/ppb"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -105,7 +105,7 @@
                     android:text="Name: Indian Oil Fuel Station" />
 
                 <TextView
-                    android:id="@+id/textView182"
+                    android:id="@+id/address18"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -113,7 +113,7 @@
                     android:text="Address: 321, Jayanagar, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView143"
+                    android:id="@+id/contact18"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -130,7 +130,7 @@
 
             <ImageView
                 android:id="@+id/imageView19"
-                app:srcCompat="@drawable/c"
+                app:srcCompat="@drawable/ppd"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -152,7 +152,7 @@
                     android:text="Name: Bharat Petroleum Fuel Station" />
 
                 <TextView
-                    android:id="@+id/textView192"
+                    android:id="@+id/address19"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -160,7 +160,7 @@
                     android:text="Address: 567, Whitefield, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView193"
+                    android:id="@+id/contact19"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -177,7 +177,7 @@
 
             <ImageView
                 android:id="@+id/imageView20"
-                app:srcCompat="@drawable/d"
+                app:srcCompat="@drawable/ppc"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="10dp" />
@@ -199,7 +199,7 @@
                     android:text="Name: HP Fuel Station" />
 
                 <TextView
-                    android:id="@+id/textView202"
+                    android:id="@+id/address20"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -207,7 +207,7 @@
                     android:text="Address: 234, Marathahalli, Bengaluru, Karnataka, India" />
 
                 <TextView
-                    android:id="@+id/textView203"
+                    android:id="@+id/contact20"
                     android:layout_width="175dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
@@ -222,8 +222,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="Back"
-            android:onClick="pplayoutButton"/>
+            android:text="Back" />
 
     </LinearLayout>
 

@@ -1,92 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/road">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view"
+        tools:ignore="InvalidId" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_below="@id/top_view"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="-80dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="15dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:id="@+id/lv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_ev" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Charging Station"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="15dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:id="@+id/lv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_battery_swap" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Battery Swap"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="15dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:id="@+id/lv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_service_station" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Service Station"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="15dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:id="@+id/lv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_tow_truck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Tow Truck"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="397dp"
-        android:layout_height="87dp"
-        android:layout_marginTop="52dp"
-        android:text="Electric Vehicle Assistance"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="171dp"
-        android:layout_height="105dp"
-        android:onClick="evCSButton"
-        android:text="Charging Station"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="171dp"
-        android:layout_height="105dp"
-        android:onClick="ev2"
-        android:text="Battery Swapping"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="171dp"
-        android:layout_height="105dp"
-        android:onClick="ev4"
-        android:text="Tow Truck"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="171dp"
-        android:layout_height="105dp"
-        android:onClick="ev3"
-        android:text="Service Stations"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
-
-    <Button
-        android:id="@+id/button8"
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="evlayoutButton"
-        android:text="BACK"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="EV Assistance"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/bu1"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="211dp"
+        android:layout_marginBottom="7dp"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/bu2"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="6dp"
+        android:text="Emergency" />
+
+</RelativeLayout>

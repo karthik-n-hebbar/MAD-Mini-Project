@@ -34,10 +34,10 @@
             android:layout_margin="5dp">
 
             <LinearLayout
+                android:id="@+id/lv1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:onClick="homelayoutButton"
                 android:orientation="vertical">
 
                 <ImageView
@@ -72,10 +72,10 @@
             android:layout_margin="5dp">
 
             <LinearLayout
+                android:id="@+id/lv2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:onClick="homelayoutButton1"
                 android:orientation="vertical">
 
                 <ImageView
@@ -110,26 +110,27 @@
             android:layout_margin="5dp">
 
             <LinearLayout
+                android:id="@+id/lv3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_info"
                     android:layout_gravity="center_horizontal"
                     android:layout_margin="10dp"
-                    />
+                    android:src="@drawable/ic_info" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="About Us"
                     android:layout_gravity="center_horizontal"
-                    android:textStyle="bold"
+                    android:text="About Us"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -147,26 +148,27 @@
             android:layout_margin="5dp">
 
             <LinearLayout
+                android:id="@+id/lv4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_contact"
                     android:layout_gravity="center_horizontal"
                     android:layout_margin="10dp"
-                    />
+                    android:src="@drawable/ic_contact" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contact Us"
                     android:layout_gravity="center_horizontal"
-                    android:textStyle="bold"
+                    android:text="Contact Us"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
