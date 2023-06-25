@@ -39,7 +39,6 @@ public class chargingstation extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
                 {
                     startActivity(mapIntent);
                 }
@@ -61,7 +60,6 @@ public class chargingstation extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
                 {
                     startActivity(mapIntent);
                 }
@@ -83,7 +81,6 @@ public class chargingstation extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
                 {
                     startActivity(mapIntent);
                 }
@@ -105,9 +102,26 @@ public class chargingstation extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
                 {
                     startActivity(mapIntent);
+                }
+            }
+        });
+
+        TextView t1 = findViewById(R.id.contact1);
+        t1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phoneNumber = t1.getText().toString().trim();
+
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + phoneNumber));
+
+                if (callIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(callIntent);
+                }
+                {
+                    startActivity(callIntent);
                 }
             }
         });
@@ -129,7 +143,6 @@ public class chargingstation extends AppCompatActivity {
                     if (callIntent.resolveActivity(getPackageManager()) != null) {
                         startActivity(callIntent);
                     }
-                    else
                     {
                         startActivity(callIntent);
                     }
@@ -137,5 +150,58 @@ public class chargingstation extends AppCompatActivity {
             });
         }
 
+        TextView t2 = findViewById(R.id.contact2);
+        t2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phoneNumber = t2.getText().toString().trim();
+
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + phoneNumber));
+
+                if (callIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(callIntent);
+                }
+                {
+                    startActivity(callIntent);
+                }
+            }
+        });
+
+        TextView t3 = findViewById(R.id.contact3);
+        t3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phoneNumber = t3.getText().toString().trim();
+
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + phoneNumber));
+
+                if (callIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(callIntent);
+                }
+                {
+                    startActivity(callIntent);
+                }
+            }
+        });
+
+        TextView t4 = findViewById(R.id.contact4);
+        t4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phoneNumber = t4.getText().toString().trim();
+
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + phoneNumber));
+
+                if (callIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(callIntent);
+                }
+                {
+                    startActivity(callIntent);
+                }
+            }
+        });
     }
 }

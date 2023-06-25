@@ -13,6 +13,7 @@ public class evs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.evs);
+        setContentView(R.layout.evs);
 
         LinearLayout cs = findViewById(R.id.lv1);
         cs.setOnClickListener(new View.OnClickListener() {

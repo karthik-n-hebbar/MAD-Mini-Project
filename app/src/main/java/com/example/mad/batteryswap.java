@@ -16,12 +16,9 @@ public class batteryswap extends AppCompatActivity {
         setContentView(R.layout.batteryswap);
 
         Button button = findViewById(R.id.button11);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(batteryswap.this, evs.class);
-                startActivity(intent);
-            }
+        button.setOnClickListener(v -> {
+            Intent intent = new Intent(batteryswap.this, evs.class);
+            startActivity(intent);
         });
 
         TextView txt = findViewById(R.id.address5);
@@ -61,7 +58,6 @@ public class batteryswap extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
                 {
                     startActivity(mapIntent);
                 }
@@ -83,7 +79,6 @@ public class batteryswap extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
                 {
                     startActivity(mapIntent);
                 }
@@ -105,9 +100,26 @@ public class batteryswap extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
                 {
                     startActivity(mapIntent);
+                }
+            }
+        });
+
+        TextView t5 = findViewById(R.id.contact5);
+        t5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phoneNumber = t5.getText().toString().trim();
+
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + phoneNumber));
+
+                if (callIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(callIntent);
+                }
+                {
+                    startActivity(callIntent);
                 }
             }
         });
@@ -116,7 +128,7 @@ public class batteryswap extends AppCompatActivity {
         int[] contactTextViewIds = {R.id.contact5, R.id.contact6, R.id.contact7, R.id.contact8};
 
         // Iterate through the contact TextViews
-        for (int i = 0; i < contactTextViewIds.length; i++) {
+        for(int i = 0; i < contactTextViewIds.length; i++) {
             TextView contactTextView = findViewById(contactTextViewIds[i]);
             contactTextView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -129,7 +141,6 @@ public class batteryswap extends AppCompatActivity {
                     if (callIntent.resolveActivity(getPackageManager()) != null) {
                         startActivity(callIntent);
                     }
-                    else
                     {
                         startActivity(callIntent);
                     }
@@ -137,5 +148,58 @@ public class batteryswap extends AppCompatActivity {
             });
         }
 
+        TextView t6 = findViewById(R.id.contact6);
+        t6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phoneNumber = t6.getText().toString().trim();
+
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + phoneNumber));
+
+                if (callIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(callIntent);
+                }
+                {
+                    startActivity(callIntent);
+                }
+            }
+        });
+
+        TextView t7 = findViewById(R.id.contact7);
+        t7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phoneNumber = t7.getText().toString().trim();
+
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + phoneNumber));
+
+                if (callIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(callIntent);
+                }
+                {
+                    startActivity(callIntent);
+                }
+            }
+        });
+
+        TextView t8 = findViewById(R.id.contact8);
+        t8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phoneNumber = t8.getText().toString().trim();
+
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + phoneNumber));
+
+                if (callIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(callIntent);
+                }
+                {
+                    startActivity(callIntent);
+                }
+            }
+        });
     }
 }

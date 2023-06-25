@@ -60,9 +60,12 @@ public class MainActivity extends AppCompatActivity {
     public void homelayoutButton1(View view){
         setContentView(R.layout.ice);
     }
-    public void homelayoutButton2(View view){
-        setContentView(R.layout.aboutus);
-    }
+//    public void homelayoutButton2(View view){
+//        setContentView(R.layout.aboutus);
+//    }
+//    public void homelayoutButton2(View view){
+//        setContentView(R.layout.aboutus);
+//    }
 
 
     public void evlayoutButton(View view){setContentView(R.layout.activity_main);}
@@ -105,21 +108,5 @@ public class MainActivity extends AppCompatActivity {
     public void pplayoutButton(View view){
         setContentView(R.layout.ice);
     }
-
-
-
-//    TextView myTextView = findViewById(R.id.contact);
-//    String phoneNumber = myTextView.getText().toString();
-//
-//    // Create an Intent with the ACTION_DIAL action and the phone number
-//    Intent intent = new Intent(Intent.ACTION_DIAL);
-//    intent.setData(Uri.parse("tel:" + phoneNumber));
-
-//    // Verify if there is an app available to handle the Intent
-//    if (intent.resolveActivity(getPackageManager()) != null) {
-//            // Launch the Intent to make the phone call
-//            startActivity(intent);
-//    }
-
 
 }

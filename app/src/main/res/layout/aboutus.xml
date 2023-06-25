@@ -44,7 +44,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center"
                     android:layout_margin="30dp"
-                    android:src="@drawable/ic_info"/>
+                    android:src="@drawable/ic_info" />
 
                 <TextView
                     android:id="@+id/textView10"
