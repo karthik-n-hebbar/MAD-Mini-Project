@@ -39,8 +39,7 @@ public class mobilepp extends AppCompatActivity {
                     if (callIntent.resolveActivity(getPackageManager()) != null) {
                         startActivity(callIntent);
                     }
-                    else
-                    {
+                    else{
                         startActivity(callIntent);
                     }
                 }

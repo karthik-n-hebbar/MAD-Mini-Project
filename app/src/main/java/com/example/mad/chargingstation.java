@@ -27,7 +27,7 @@ public class chargingstation extends AppCompatActivity {
         TextView txt = findViewById(R.id.address1);
         txt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "Laven Gardenia";  // Replace with the desired location
+                String location = "Bescom Charging Station";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -39,7 +39,7 @@ public class chargingstation extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -48,7 +48,7 @@ public class chargingstation extends AppCompatActivity {
         TextView txt2 = findViewById(R.id.address2);
         txt2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "DSATM";  // Replace with the desired location
+                String location = "AtherGrid Charging Station";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -60,7 +60,7 @@ public class chargingstation extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -69,7 +69,7 @@ public class chargingstation extends AppCompatActivity {
         TextView txt3 = findViewById(R.id.address3);
         txt3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "DSU";  // Replace with the desired location
+                String location = "Electro Charging Point";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -81,7 +81,7 @@ public class chargingstation extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -90,7 +90,7 @@ public class chargingstation extends AppCompatActivity {
         TextView txt4 = findViewById(R.id.address4);
         txt4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "DSI";  // Replace with the desired location
+                String location = "TATA Charging Station";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -102,7 +102,7 @@ public class chargingstation extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -112,7 +112,7 @@ public class chargingstation extends AppCompatActivity {
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String phoneNumber = t1.getText().toString().trim();
+                String phoneNumber = t1.getText().toString().replaceAll("[^+0-9]", "");
 
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
                 callIntent.setData(Uri.parse("tel:" + phoneNumber));
@@ -120,41 +120,17 @@ public class chargingstation extends AppCompatActivity {
                 if (callIntent.resolveActivity(getPackageManager()) != null) {
                     startActivity(callIntent);
                 }
-                {
+                else{
                     startActivity(callIntent);
                 }
             }
         });
 
-        // Define an array of contact TextView IDs
-        int[] contactTextViewIds = {R.id.contact1, R.id.contact2, R.id.contact3, R.id.contact4};
-
-        // Iterate through the contact TextViews
-        for (int i = 0; i < contactTextViewIds.length; i++) {
-            TextView contactTextView = findViewById(contactTextViewIds[i]);
-            contactTextView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String phoneNumber = contactTextView.getText().toString().trim();
-
-                    Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                    callIntent.setData(Uri.parse("tel:" + phoneNumber));
-
-                    if (callIntent.resolveActivity(getPackageManager()) != null) {
-                        startActivity(callIntent);
-                    }
-                    {
-                        startActivity(callIntent);
-                    }
-                }
-            });
-        }
-
         TextView t2 = findViewById(R.id.contact2);
         t2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String phoneNumber = t2.getText().toString().trim();
+                String phoneNumber = t2.getText().toString().replaceAll("[^+0-9]", "");
 
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
                 callIntent.setData(Uri.parse("tel:" + phoneNumber));
@@ -162,7 +138,7 @@ public class chargingstation extends AppCompatActivity {
                 if (callIntent.resolveActivity(getPackageManager()) != null) {
                     startActivity(callIntent);
                 }
-                {
+                else{
                     startActivity(callIntent);
                 }
             }
@@ -172,7 +148,7 @@ public class chargingstation extends AppCompatActivity {
         t3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String phoneNumber = t3.getText().toString().trim();
+                String phoneNumber = t3.getText().toString().replaceAll("[^+0-9]", "");
 
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
                 callIntent.setData(Uri.parse("tel:" + phoneNumber));
@@ -180,7 +156,7 @@ public class chargingstation extends AppCompatActivity {
                 if (callIntent.resolveActivity(getPackageManager()) != null) {
                     startActivity(callIntent);
                 }
-                {
+                else{
                     startActivity(callIntent);
                 }
             }
@@ -190,7 +166,7 @@ public class chargingstation extends AppCompatActivity {
         t4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String phoneNumber = t4.getText().toString().trim();
+                String phoneNumber = t4.getText().toString().replaceAll("[^+0-9]", "");
 
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
                 callIntent.setData(Uri.parse("tel:" + phoneNumber));
@@ -198,7 +174,7 @@ public class chargingstation extends AppCompatActivity {
                 if (callIntent.resolveActivity(getPackageManager()) != null) {
                     startActivity(callIntent);
                 }
-                {
+                else{
                     startActivity(callIntent);
                 }
             }

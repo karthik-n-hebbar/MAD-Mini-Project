@@ -21,7 +21,7 @@ public class emergency extends AppCompatActivity {
             int textViewId = getResources().getIdentifier("c" + i, "id", getPackageName());
             TextView textView = findViewById(textViewId);
 
-            final String phoneNumber = textView.getText().toString().trim();
+            final String phoneNumber = textView.getText().toString().replaceAll("[^0-9]", "");
 
             textView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -32,8 +32,7 @@ public class emergency extends AppCompatActivity {
                     if (callIntent.resolveActivity(getPackageManager()) != null) {
                         startActivity(callIntent);
                     }
-                    else
-                    {
+                    else{
                         startActivity(callIntent);
                     }
                 }

@@ -11,12 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class contact extends AppCompatActivity {
 
-    private static final int REQUEST_PHONE_CALL;
-
-    static {
-        REQUEST_PHONE_CALL = 1;
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +20,7 @@ public class contact extends AppCompatActivity {
         txt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String phoneNumber = txt.getText().toString().trim();
+                String phoneNumber = txt.getText().toString().replaceAll("[^+0-9]", "");
 
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
                 callIntent.setData(Uri.parse("tel:" + phoneNumber));
@@ -34,8 +28,7 @@ public class contact extends AppCompatActivity {
                 if (callIntent.resolveActivity(getPackageManager()) != null) {
                     startActivity(callIntent);
                 }
-                else
-                {
+                else{
                     startActivity(callIntent);
                 }
             }

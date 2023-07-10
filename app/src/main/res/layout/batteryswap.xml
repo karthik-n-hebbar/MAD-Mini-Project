@@ -58,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Name: SwiftSwap Station" />
+                    android:text="Name: Sun Mobility Charging Station" />
 
                 <TextView
                     android:id="@+id/address5"
@@ -66,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 789, Indiranagar, Bengaluru, Karnataka, India" />
+                    android:text="Address: 789, Kaglipura, Bengaluru, Karnataka, India" />
 
                 <TextView
                     android:id="@+id/contact5"
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Contact: +91 1234567890" />
+                    android:text="Contact: +91 8234567890" />
             </LinearLayout>
 
         </LinearLayout>
@@ -105,7 +105,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Name: PowerCharge Hub" />
+                    android:text="Name: Kazam Charging Station" />
 
                 <TextView
                     android:id="@+id/address6"
@@ -113,7 +113,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 321, Jayanagar, Bengaluru, Karnataka, India" />
+                    android:text="Address: 321,Thalghatpura , Bengaluru, Karnataka, India" />
 
                 <TextView
                     android:id="@+id/contact6"
@@ -152,7 +152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Name: ElectroSwap Point" />
+                    android:text="Name: YULU" />
 
                 <TextView
                     android:id="@+id/address7"
@@ -160,7 +160,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 567, Whitefield, Bengaluru, Karnataka, India" />
+                    android:text="Address: 567, Agara Cross, Bengaluru, Karnataka, India" />
 
                 <TextView
                     android:id="@+id/contact7"
@@ -199,7 +199,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Name: VoltEx Station" />
+                    android:text="Name: TATA Swap Station" />
 
                 <TextView
                     android:id="@+id/address8"
@@ -207,7 +207,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 234, Marathahalli, Bengaluru, Karnataka, India" />
+                    android:text="Address: 234, Kanakapura, Bengaluru, Karnataka, India" />
 
                 <TextView
                     android:id="@+id/contact8"

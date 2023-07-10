@@ -27,7 +27,7 @@ public class petrolpump extends AppCompatActivity {
         TextView txt = findViewById(R.id.address17);
         txt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "Laven Gardenia";  // Replace with the desired location
+                String location = "Shell Fuel Station";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -39,8 +39,7 @@ public class petrolpump extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -49,7 +48,7 @@ public class petrolpump extends AppCompatActivity {
         TextView txt2 = findViewById(R.id.address18);
         txt2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "DSATM";  // Replace with the desired location
+                String location = "Indian Oil Fuel Station";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -61,8 +60,7 @@ public class petrolpump extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -71,7 +69,7 @@ public class petrolpump extends AppCompatActivity {
         TextView txt3 = findViewById(R.id.address19);
         txt3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "DSU";  // Replace with the desired location
+                String location = "Bharat Petroleum Fuel Station";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -83,8 +81,7 @@ public class petrolpump extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -93,7 +90,7 @@ public class petrolpump extends AppCompatActivity {
         TextView txt4 = findViewById(R.id.address20);
         txt4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "DSI";  // Replace with the desired location
+                String location = "HP Fuel Station";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -105,8 +102,7 @@ public class petrolpump extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -116,7 +112,7 @@ public class petrolpump extends AppCompatActivity {
             int textViewId = getResources().getIdentifier("contact" + i, "id", getPackageName());
             TextView textView = findViewById(textViewId);
 
-            final String phoneNumber = textView.getText().toString().trim();
+            final String phoneNumber = textView.getText().toString().replaceAll("[^+0-9]", "");
 
             textView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -127,8 +123,7 @@ public class petrolpump extends AppCompatActivity {
                     if (callIntent.resolveActivity(getPackageManager()) != null) {
                         startActivity(callIntent);
                     }
-                    else
-                    {
+                    else{
                         startActivity(callIntent);
                     }
                 }

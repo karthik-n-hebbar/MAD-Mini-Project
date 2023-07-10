@@ -63,7 +63,7 @@
                     android:layout_height="32dp"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 123, MG Road, Koramangala, Bengaluru" />
+                    android:text="Address: 123, JP Nagar, Bengaluru" />
 
                 <TextView
                     android:id="@+id/contact13"
@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Contact: +91 1234567890" />
+                    android:text="Contact: +91 9234567890" />
 
             </LinearLayout>
 
@@ -111,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 456, Indiranagar, Bengaluru, Karnataka, India" />
+                    android:text="Address: 456, Kanakapura, Bengaluru, Karnataka, India" />
 
                 <TextView
                     android:id="@+id/contact14"
@@ -151,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Name: Swift Recovery Solutions" />
+                    android:text="Name: VK Towing Service" />
 
                 <TextView
                     android:id="@+id/address15"
@@ -159,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 789, Jayanagar, Bengaluru, Karnataka, India" />
+                    android:text="Address: 789,Banashankari, Bengaluru, Karnataka, India" />
 
                 <TextView
                     android:id="@+id/contact15"
@@ -198,7 +198,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Name: Speedy Towing and Recovery" />
+                    android:text="Name: Maruti Towing Service" />
 
                 <TextView
                     android:id="@+id/address16"
@@ -206,7 +206,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 321, Whitefield, Bengaluru, Karnataka, India" />
+                    android:text="Address: 321, Thalghatpura, Bengaluru, Karnataka, India" />
 
                 <TextView
                     android:id="@+id/contact16"

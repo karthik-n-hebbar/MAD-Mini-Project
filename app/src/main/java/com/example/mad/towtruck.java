@@ -27,7 +27,7 @@ public class towtruck extends AppCompatActivity {
         TextView txt = findViewById(R.id.address13);
         txt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "Laven Gardenia";  // Replace with the desired location
+                String location = "Quick Towing Services";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -39,8 +39,7 @@ public class towtruck extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -49,7 +48,7 @@ public class towtruck extends AppCompatActivity {
         TextView txt2 = findViewById(R.id.address14);
         txt2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "DSATM";  // Replace with the desired location
+                String location = "Reliable Roadside Assistance";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -61,8 +60,7 @@ public class towtruck extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -71,7 +69,7 @@ public class towtruck extends AppCompatActivity {
         TextView txt3 = findViewById(R.id.address15);
         txt3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "DSU";  // Replace with the desired location
+                String location = "VK Towing Service";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -83,8 +81,7 @@ public class towtruck extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -93,7 +90,7 @@ public class towtruck extends AppCompatActivity {
         TextView txt4 = findViewById(R.id.address16);
         txt4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String location = "DSI";  // Replace with the desired location
+                String location = "Maruti Towing Service";  // Replace with the desired location
 
                 // Create an Intent with the location data
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(location));
@@ -105,8 +102,7 @@ public class towtruck extends AppCompatActivity {
                     // Start the maps application
                     startActivity(mapIntent);
                 }
-                else
-                {
+                else{
                     startActivity(mapIntent);
                 }
             }
@@ -116,7 +112,7 @@ public class towtruck extends AppCompatActivity {
             int textViewId = getResources().getIdentifier("contact" + i, "id", getPackageName());
             TextView textView = findViewById(textViewId);
 
-            final String phoneNumber = textView.getText().toString().trim();
+            final String phoneNumber = textView.getText().toString().replaceAll("[^+0-9]", "");
 
             textView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -127,8 +123,7 @@ public class towtruck extends AppCompatActivity {
                     if (callIntent.resolveActivity(getPackageManager()) != null) {
                         startActivity(callIntent);
                     }
-                    else
-                    {
+                    else{
                         startActivity(callIntent);
                     }
                 }

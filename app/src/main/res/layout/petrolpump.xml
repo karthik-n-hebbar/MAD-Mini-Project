@@ -63,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 789, Indiranagar, Bengaluru, Karnataka, India" />
+                    android:text="Address: 789, Thalghatpura, Bengaluru, Karnataka, India" />
 
                 <TextView
                     android:id="@+id/contact17"
@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Contact: +91 1234567890" />
+                    android:text="Contact: +91 7234567890" />
             </LinearLayout>
 
         </LinearLayout>
@@ -110,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 321, Jayanagar, Bengaluru, Karnataka, India" />
+                    android:text="Address: 321, Raghunahalli, Bengaluru, Karnataka, India" />
 
                 <TextView
                     android:id="@+id/contact18"
@@ -157,7 +157,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 567, Whitefield, Bengaluru, Karnataka, India" />
+                    android:text="Address: 567, JP Nagar, Bengaluru, Karnataka, India" />
 
                 <TextView
                     android:id="@+id/contact19"
@@ -204,7 +204,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2.5dp"
                     android:layout_marginEnd="2.5dp"
-                    android:text="Address: 234, Marathahalli, Bengaluru, Karnataka, India" />
+                    android:text="Address: 234, Silk Institue, Bengaluru, Karnataka, India" />
 
                 <TextView
                     android:id="@+id/contact20"

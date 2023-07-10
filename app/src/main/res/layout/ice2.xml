@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <View
         android:id="@+id/top_view"
@@ -16,63 +17,25 @@
         android:layout_width="match_parent"
         android:layout_height="550dp"
         android:layout_below="@id/top_view"
-        android:columnCount="2"
-        android:rowCount="2"
         android:layout_marginLeft="6dp"
+        android:layout_marginTop="-80dp"
         android:layout_marginRight="6dp"
-        android:layout_marginTop="-80dp">
+        android:columnCount="2"
+        android:rowCount="2">
 
         <androidx.cardview.widget.CardView
             android:layout_width="80dp"
             android:layout_height="15dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="15dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
             android:layout_row="0"
+            android:layout_rowWeight="1"
             android:layout_column="0"
-            android:layout_margin="5dp">
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp">
 
             <LinearLayout
                 android:id="@+id/lv1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/ic_ev" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="EVs"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="80dp"
-            android:layout_height="15dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="15dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:layout_margin="5dp">
-
-            <LinearLayout
-                android:id="@+id/lv2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -89,10 +52,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="ICs"
+                    android:text="Nearest Petrol Station"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
 
             </LinearLayout>
 
@@ -101,13 +65,52 @@
         <androidx.cardview.widget.CardView
             android:layout_width="80dp"
             android:layout_height="15dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="15dp"
+            android:layout_row="0"
             android:layout_rowWeight="1"
+            android:layout_column="1"
             android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp">
+
+            <LinearLayout
+                android:id="@+id/lv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_tanker" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Mobile Petrol Service"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="15dp"
             android:layout_row="1"
+            android:layout_rowWeight="1"
             android:layout_column="0"
-            android:layout_margin="5dp">
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp">
 
             <LinearLayout
                 android:id="@+id/lv3"
@@ -121,13 +124,13 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_margin="10dp"
-                    android:src="@drawable/ic_info" />
+                    android:src="@drawable/ic_service_station" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="About Us"
+                    android:text="Service Station"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -139,13 +142,13 @@
         <androidx.cardview.widget.CardView
             android:layout_width="80dp"
             android:layout_height="15dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="15dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
             android:layout_row="1"
+            android:layout_rowWeight="1"
             android:layout_column="1"
-            android:layout_margin="5dp">
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp">
 
             <LinearLayout
                 android:id="@+id/lv4"
@@ -159,13 +162,13 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_margin="10dp"
-                    android:src="@drawable/ic_contact" />
+                    android:src="@drawable/ic_tow_truck" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Contact Us"
+                    android:text="Tow Truck"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -181,36 +184,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="BreakdownBuddy"
+        android:layout_marginTop="30dp"
+        android:text="IC Assistance"
         android:textColor="@color/white"
         android:textSize="36sp"
-        android:textStyle="bold"
-        android:layout_marginTop="30dp"/>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="164dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="26dp"
-        android:layout_marginEnd="220dp"
-        android:layout_marginBottom="11dp"
-        android:text="SOS"
-        android:textSize="20sp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="164dp"
+        android:id="@+id/button"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="11dp"
-        android:text="Emergency"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:layout_marginEnd="211dp"
+        android:layout_marginBottom="7dp"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="6dp"
+        android:text="Emergency" />
 
 </RelativeLayout>

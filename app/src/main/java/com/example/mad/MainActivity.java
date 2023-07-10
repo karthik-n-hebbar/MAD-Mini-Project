@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button exitButton;
+    Button exitButton,bu1,bu2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,19 +53,34 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button bu2=findViewById(R.id.button6);
+        bu2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, emergency.class);
+                startActivity(intent);
+            }
+        });
+
+        Button bu1=findViewById(R.id.button3);
+        bu1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, sos.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 
-    public void homelayoutButton(View view){setContentView(R.layout.evs);}
+    public void homelayoutButton(View view){setContentView(R.layout.evs2);}
     public void homelayoutButton1(View view){
-        setContentView(R.layout.ice);
+        setContentView(R.layout.ice2);
     }
-//    public void homelayoutButton2(View view){
-//        setContentView(R.layout.aboutus);
-//    }
-//    public void homelayoutButton2(View view){
-//        setContentView(R.layout.aboutus);
-//    }
+    public void homelayoutButton2(View view){
+        setContentView(R.layout.aboutus);
+    }
 
 
     public void evlayoutButton(View view){setContentView(R.layout.activity_main);}
@@ -103,10 +118,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void cslayoutButton(View view){
-        setContentView(R.layout.evs);
+        setContentView(R.layout.evs2);
     }
     public void pplayoutButton(View view){
-        setContentView(R.layout.ice);
+        setContentView(R.layout.ice2);
     }
+
 
 }

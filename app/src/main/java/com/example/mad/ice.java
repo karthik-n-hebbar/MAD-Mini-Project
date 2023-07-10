@@ -12,9 +12,7 @@ public class ice extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ice);
-        setContentView(R.layout.ice);
-
+        setContentView(R.layout.ice2);
 
         LinearLayout pp = findViewById(R.id.lv1);
         pp.setOnClickListener(new View.OnClickListener() {
