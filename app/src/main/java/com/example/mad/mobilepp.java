@@ -28,7 +28,7 @@ public class mobilepp extends AppCompatActivity {
             int textViewId = getResources().getIdentifier("contact" + i, "id", getPackageName());
             TextView textView = findViewById(textViewId);
 
-            final String phoneNumber = textView.getText().toString().trim();
+            final String phoneNumber = textView.getText().toString().replaceAll("[^+0-9]", "");
 
             textView.setOnClickListener(new View.OnClickListener() {
                 @Override
